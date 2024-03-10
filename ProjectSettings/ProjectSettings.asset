@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 2af01e9b731e9994a8d431456be69511
+  productGUID: 9aace0b32293a7349b25986422de715b
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: "Juego individual Nicol\xE1s Esquivel"
+  productName: JuegoIndividualNEC
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -676,14 +676,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: "Juego individual Nicol\xE1s Esquivel"
+  metroPackageName: JuegoIndividualNEC
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: "Juego individual Nicol\xE1s Esquivel"
+  metroApplicationDescription: JuegoIndividualNEC
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -752,10 +752,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: a678845e-cb9e-495d-af2f-7729ccf57903
+  cloudProjectId: 01b7f4f2-b2b7-4664-9601-211c26bd1ee1
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: "Juego individual Nicol\xE1s Esquivel"
+  projectName: JuegoIndividualNEC
   organizationId: nicoesquivelrojas
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

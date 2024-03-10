@@ -1,0 +1,925 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &982526351538430758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5864470427698729143}
+  - component: {fileID: 5109931221539579191}
+  - component: {fileID: 1290496412850006148}
+  - component: {fileID: 8742000103658533382}
+  m_Layer: 3
+  m_Name: Tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5864470427698729143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982526351538430758}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!193 &5109931221539579191
+Tree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982526351538430758}
+  m_SpeedTreeWindAsset: {fileID: 0}
+  m_TreeData: {fileID: 6437789228091715998}
+--- !u!33 &1290496412850006148
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982526351538430758}
+  m_Mesh: {fileID: -8340306771703363360}
+--- !u!23 &8742000103658533382
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982526351538430758}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 3010419303601280966}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!43 &-8340306771703363360
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mesh
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 360
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 77
+    localAABB:
+      m_Center: {x: 0.21522258, y: 6.927221, z: -0.69446886}
+      m_Extent: {x: 0.70262706, y: 6.927221, z: 1.2672293}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 090000000a00000001000a000a0001000b00010002000b000b0002000c00020003000c000c0003000d00030004000d000d0004000e00040005000e000e0005000f00050006000f000f000600100006000700100010000700110007000800110012000900130009000a00130013000a0014000a000b00140014000b0014000b000c00140014000c0015000c000d00150015000d0016000d000e00160016000e0016000e000f00160016000f0017000f0010001700170010001800100011001800190012001a00120013001a001a0013001b00130014001b001b0014001c00140015001c001c0015001d00150016001d001d0016001e00160017001e001e0017001f00170018001f0020001900210019001a00210021001a0021001a001b00210021001b0022001b001c00220022001c0023001c001d00230023001d0023001d001e00230023001e0024001e001f0024002500200026002000210026002600210027002100220027002700220028002200230028002800230029002300240029002a0025002b00250026002b002b0026002c00260027002c002c0027002d00270028002d002d0028002e00280029002e002f002a0030002a002b00300030002b0031002b002c00310031002c0032002c002d00320032002d0033002d002e00330034002f0035002f0030003500350030003600300031003600360031003700310032003700370032003800320033003800390034003a00340035003a003a0035003b00350036003b003b0036003c00360037003c003c0037003d00370038003d003e0039003f0039003a003f003f003a0040003a003b00400040003b0041003b003c00410041003c0042003c003d00420043003e0044003e003f00440044003f0045003f0040004500450040004600400041004600460041004700410042004700480043004900430044004900490044004a00440045004a004a0045004b00450046004b004b0046004c00460047004c00
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 77
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 56
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 64
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 5544
+    _typelessdata: 0000000000000000801df23eb1cbcc3bf6a4573dd4a37f3fb7fe7fbf000000008014cd3b000080bf0000000000000000000000000000803f0000403f000000000000000000000000f564a83e00000000f564a83ec6ed363ff4a4573de694323f64d432bf00000000d02e373f000080bf0000000000000000000000000000803f0000303f0000000000000000000000008f5cec3e000000004756adb217a57f3ff6a4573dffd9543aab2555ba00000000faff7f3f000080bf00000000000000000000000002fe7f3f0000203f0000000000000000000000001eaba83e000000001eaba8bec5ed363ff6a4573de89432bf65d4323f00000000ce2e373f000080bf00000000000000000000000099f87f3f0000103f000000000000000000000000788e31b300000000801df2beff2e163cf6a4573d5ba27fbf3dfd7f3f000000006464163c000080bf00000000000000000000000082f77f3f0000003f00000000000000000000000035cbabbe0000000032cbabbe4ece34bff6a4573d0fbb34bf50fb343f00000000960e35bf000080bf0000000000000000000000007bfd7f3f0000e03e000000000000000000000000ba03f2be0000000003adc131a8a47fbff6a4573d4969743b2ec074bb000000008bff7fbf000080bf0000000000000000000000000000803f0000c03e000000000000000000000000f083aabe00000000f783aa3e4dce34bff7a4573d11bb343f51fb34bf00000000940e35bf000080bf0000000000000000000000000000803f0000a03e000000000000000000000000788eb13300000000801df23eb1cbcc3bf6a4573dd4a37f3fb7fe7fbf000000008014cd3b000080bf0000000000000000000000000000803f0000803e000000000000000000000000b97f61bd8060743fcc74073f27aeab3c541e68bd44887f3f9cf17fbf7ce59cba6966ab3c000080bf0000000000000000000000000000803f0000403fc09db23e3fac2d39000000005a65773eb13b773f157ece3e4c3d353f00acfbbcb9a0343f1fb434bfc67b81bd5a9c343f000080bf0000000000000000000000000000803f0000303fc09db23e3fac2d3900000000fe9cbb3e9e0a7e3f17e4dc3d3bda7f3ff3d6013da1f5463c738617bc372eb8bda1f37e3f000080bf00000000000000000000000086fe7f3f0000203fc09db23e3fac2d39000000002e117d3e8f82823f27b745beb102373f8aaec33db35331bf62e8323f37bc84bd725a363f000080bf000000000000000000000000dfd27f3f0000103fc09db23e3fac2d3900000000eb6361bd1506843f58b8a4bec0db883bb91efc3dee0c7ebf6cff7f3f1b0a8bba6a98853b000080bf0000000000000000000000000eaf7f3f0000003fc09db23e3fac2d3900000000b42ab8bea797823fb93f48be19b134bfab5bc73d3ea033bf743d353f4818813da81334bf000080bf0000000000000000000000004be37f3f0000e03ec09db23e3fac2d3900000000158df9be38317e3f05f2dc3d17d87fbfccb10d3dc4e795bb5564fb3b662fb83d7ff47ebf000080bf0000000000000000000000000000803f0000c03ec09db23e3fac2d39000000002c94babe240c773f5efcd43eaaeb32bf4155fabc47ed363fa7fd36bf4fd2813d054a32bf000080bf0000000000000000000000000000803f0000a03ec09db23e3fac2d3900000000a67f61bd8060743fcc74073f27aeab3c541e68bd44887f3f9cf17fbf7ce59cba6966ab3c000080bf0000000000000000000000000000803f0000803ec09db23e3fac2d390000000069bcb83a3c9dfd3f6da0123f722628bb80387b3c14f87f3fd8f77fbf0d5f7e3cbec037bb000080bf0000000000000000000000000000803f0000403fe7a7393f3facad3a0000000068aeb03e4d62fd3fd17ec13e788f5c3f53da313caaed013fe7e901bfc8c7fcbbe6935c3f000080bf0000000000000000000000000000803faaaa2a3fe7a7393f3facad3a000000001a60b43e044cfe3fd96ebcbc0a4e5e3fe276ec3cb878fdbed7cefd3ecb5abfbc52405e3f000080bf0000000000000000000000000ff87f3f5655153fe7a7393f3facad3a000000004b53c73ac774ff3f4b2365bec93e11bcb81c533d51a67fbf44f57f3f7cab7abca35b1ebc000080bf0000000000000000000000009ac87f3f0000003fe7a7393f3facad3a000000000104adbe1ba6ff3ffcc585bcb4605ebf4524643dc909fcbe629ffc3ee05d043cc9a85ebf000080bf00000000000000000000000086fb7f3f5655d53ee7a7393f3facad3a00000000ba6cadbe39befe3f7c83c03e188f5dbf43891a3dabc4ff3e347dffbed37dbf3ce2c45dbf000080bf0000000000000000000000000000803fabaaaa3ee7a7393f3facad3a00000000b7beb83a3c9dfd3f6da0123f722628bb80387b3c14f87f3fd8f77fbf0d5f7e3cbec037bb000080bf0000000000000000000000000000803f0000803ee7a7393f3facad3a000000007caabfbc92da41409077043f42261cbc95b3123ef7587d3fdcf27fbf69f999bc9958e2bb000080bf0000000000000000000000000000803f0000403fbf1f913f5389923b0000000013349b3ea1e640405a12a93e1e535d3f9e85d43d5bc2fb3eae1700bfc54eb13dc6895c3f000080bf000000000000000000000000b0fd7f3faaaa2a3fbf1f913f5389923b00000000be879b3e183b3e4083bf3bbd7a875c3f420aecbb7aff01bfad75013f024fd53de53c5b3f000080bf00000000000000000000000008fb7f3f5655153fbf1f913f5389923b00000000412cccbc9f933c40fdbe66be6cd790bc295d9ebd80317fbfe6eb7f3f3370823c795f9bbc000080bf000000000000000000000000e3fe7f3f0000003fbf1f913f5389923b000000003d1eacbe19943d40af040abda6c25ebf2ff415bd4f9afbbe433cfc3e2296b2bd4aa85dbf000080bf0000000000000000000000000000803f5655d53ebf1f913f5389923b00000000c44fadbe0021404050cda63e9c055fbf800c933ddfabf83e0d4ffbbe5db2d6bd7b6b5dbf000080bf0000000000000000000000000000803fabaaaa3ebf1f913f5389923b0000000059aabfbc92da41409077043f42261cbc95b3123ef7587d3fdcf27fbf69f999bc9958e2bb000080bf0000000000000000000000000000803f0000803ebf1f913f5389923b00000000b6b592bc78b89f4074eed83d6026283b07c5123e1f5b7d3fef9a7fbf984f623d2262b1bb000080bf0000000000000000000000000000803f0000403f158f0440339aa93c00000000e65b963e5a149e40a3e14bbee4ef7f3fa00fb5bcf656e33a350e3b3a9fd6e13d4e707e3f000080bf00000000000000000000000091fe7f3f0000203f158f0440339aa93c00000000c84e96bc738c9d40fc7d01bf045a953aa4e29dbdeb3c7fbfef9a7f3f984f62bd2262b13b000080bf0000000000000000000000006bff7f3f0000003f158f0440339aa93c000000002c42a5becc2b9f40c24d4fbe11fd7ebf52ebb43d7cdd14bc19143bba9fd6e1bd4e707ebf000080bf0000000000000000000000000000803f0000c03e158f0440339aa93c0000000099b592bc78b89f4074eed83d6026283b07c5123e1f5b7d3fef9a7fbf984f623d2262b1bb000080bf0000000000000000000000000000803f0000803e158f0440339aa93c00000000c31a9c3d7325bf400fb5c23ccd4e8f395fa3e43d51667e3ffccb7fbf0a42223d11d288bb000080bf0000000000000000000000000000803f0000403fd3bc27405389123d000000009d3eb93ebd11be40e39a84be98fe7f3fd26ed0bbaa66cc3ae75c8aba3daca03df7357f3f000080bf0000000000000000000000001dfd7f3f0000203fd3bc27405389123d00000000a4539d3d1fbabd4023310abf6a311c3bbd0d39bde5bc7fbffccb7f3f0a4222bd11d2883b000080bf0000000000000000000000007dfc7f3f0000003fd3bc27405389123d00000000622f48bebcc6be4021cc85be7d507fbf6f23953d1863debbce598a3a3daca0bdf7357fbf000080bf0000000000000000000000000000803f0000c03ed3bc27405389123d00000000ca1a9c3d7325bf400fb5c23ccd4e8f395fa3e43d51667e3ffccb7fbf0a42223d11d288bb000080bf0000000000000000000000000000803f0000803ed3bc27405389123d0000000097f37b3d092bdf404b0901beefe4fe3a69571c3e8aff7c3ffec97fbfca54253d80e88bbb000080bf0000000000000000000000000000803f0000403f357e4f40c6b1683d00000000ac8e973e22f9dd401b63b6be48fe7f3f6339edbb5d7391390dda1a3a6306f53d42297e3f000080bf0000000000000000000000001af67f3f0000203f357e4f40c6b1683d00000000a0d37a3d6263dd406d6b16bfdc41483a8218b1bd800a7fbffec97f3fca5425bd80e88b3b000080bf00000000000000000000000080fd7f3f0000003f357e4f40c6b1683d00000000800634be4695de405e6bb7bec54c7fbfe869963db64807bcf8df1aba6306f5bd42297ebf000080bf0000000000000000000000000000803f0000c03e357e4f40c6b1683d00000000a2f37b3d092bdf404b0901beefe4fe3a69571c3e8aff7c3ffec97fbfca54253d80e88bbb000080bf0000000000000000000000000000803f0000803e357e4f40c6b1683d00000000bf278b3e82220f410ba5e3beb561173cd627453efb327b3feef17cbf034d1c3e7221a9bc000080bf0000000000000000000000000000803f0000403f27249940bd47f73d000000008afee13e88420e4175b01dbf8f1e7e3fe5c9f5bd1b447b3c5d81863bf4ed233e37b27c3f000080bf000000000000000000000000a1d67f3f0000203f27249940bd47f73d00000000ea6b8a3e963d0e41ef0a4abfc49a873ad68402be70e97dbfeef17c3f034d1cbe7221a93c000080bf000000000000000000000000f0f57f3f0000003f27249940bd47f73d000000007829d03d83190f41b6811fbf3a7d7bbff8873d3e936fd4bc188286bb41ed23be3eb27cbf000080bf000000000000000000000000feff7f3f0000c03e27249940bd47f73d00000000c0278b3e81220f410ba5e3beb561173cd627453efb327b3feef17cbf034d1c3e7221a9bc000080bf0000000000000000000000000000803f0000803e27249940bd47f73d000000001729ef3e97921e418f152ebf869db63c8cba853e390c773f2d027abf5354593ec4e10ebd000080bf0000000000000000000000000000803f0000403f57beb940339a293e0000000066251a3f15951d412ea34fbf1fb37b3f43cd38bea881df3c0740783c4a2e6b3e6a20793f000080bf000000000000000000000000c8ad7f3f0000203f57beb940339a293e0000000027fcec3ec88a1d417cf273bf31fe02bce1a44abec7ed7abf2d027a3f535459bec4e10e3d000080bf00000000000000000000000072cc7f3f0000003f57beb940339a293e000000002672aa3ebd841e416c1952bf2b0a78bf7b9d793e92d92dbd794078bc4a2e6bbe6a2079bf000080bf00000000000000000000000021ff7f3f0000c03e57beb940339a293e000000001829ef3e97921e418f152ebf869db63c8cba853e390c773f2d027abf5354593ec4e10ebd000080bf0000000000000000000000000000803f0000803e57beb940339a293e0000000078d4333f8c842d41af9578bfcf79fc3cfdc49a3e6de5733ff0447bbf69cb413e28cce7bc000080bf0000000000000000000000000000803f0000403f8f30e340a1bd613e000000008e184e3f72ba2c412b1c89bfe4bf7c3ffa7521beb1c09d3cb7bfc83ce6bb8a3ecd57763f000080bf00000000000000000000000012df7f3f0000203f8f30e340a1bd613e00000000ee7d323fd3972c413a9096bf72cb94bc2f1675be138478bff0447b3f69cb41be28cce73c000080bf00000000000000000000000066b97f3f0000003f8f30e340a1bd613e0000000014ee183f775e2d415ae089bf718279bfc4e9613ec1ca18bdb7bfc8bce6bb8abecd5776bf000080bf00000000000000000000000011fd7f3f0000c03e8f30e340a1bd613e0000000078d4333f8c842d41af9578bfcf79fc3cfdc49a3e6de5733ff0447bbf69cb413e28cce7bc000080bf0000000000000000000000000000803f0000803e8f30e340a1bd613e00000000a3c2583f9f9b3c41e3c3a4bf582e1a3df218b63e48116f3fbc317fbff1ffa03d49ca273c000080bf0000000000000000000000000000803f0000403f28080e415389923e0000000032f86a3f5b223c41dbbcadbfaca87f3fd8d940bdfc18adbc4e8e103dcb10a63ed9fd713f000080bf0000000000000000000000000000803f0000203f28080e415389923e00000000046f573f8bd83b413088b6bf70c006bd86d995be34a574bfbc317f3ff1ffa0bd49ca27bc000080bf00000000000000000000000057a17f3f0000003f28080e415389923e000000005d05453f3d523c41f48aadbfcd717ebfae6ae13d37782cbabb8e10bdcb10a6bed9fd71bf000080bf0000000000000000000000006edf7f3f0000c03e28080e415389923e00000000a4c2583f9f9b3c41e3c3a4bf582e1a3df218b63e48116f3fbc317fbff1ffa03d49ca273c000080bf0000000000000000000000000000803f0000803e28080e415389923e0000000043b1573f87484b41e7f0d7bfb1be073d55c9a03eb0e6723fd1c27fbfa775163d3b44ba3c000080bf00000000000000000000000038fc7f3f0000403fc2543b41e64eba3e00000000425a613fbb154b41d3c9dcbfafdd7f3f8bb8dcbb0ba301bd7121043dc080913e554e753f000080bf0000000000000000000000000000803f0000203fc2543b41e64eba3e00000000a40b573f56ed4a41c38ce1bf4a6000bd2c1582be3e7877bfd1c27f3fa77516bd3b44babc000080bf0000000000000000000000001cdd7f3f0000003fc2543b41e64eba3e00000000adc44c3fd7214b41dc8ddcbfc8677fbf2d9c883d9f28623c712104bdc08091be554e75bf000080bf00000000000000000000000003df7f3f0000c03ec2543b41e64eba3e0000000043b1573f87484b41e7f0d7bfb1be073d55c9a03eb0e6723fd1c27fbfa775163d3b44ba3c000080bf00000000000000000000000038fc7f3f0000803ec2543b41e64eba3e00000000119e693fcbab5d41ed18fbbf4444063d987b803e97aa773fe46c7fbf30a6843ddd508b3c000080bf000000000000000000000000d5fb7f3f0000403f560faa41801df23e00000000119e693fcbab5d41ed18fbbfdfe17f3fc79a49bcdd01e3bc4687f23cf1a04b3ed9c57a3f000080bf0000000000000000000000000000803f0000203f560faa41801df23e00000000119e693fcbab5d41ed18fbbffed3d7bc12b515bed7287dbfe46c7f3f32a684bd0b518bbc000080bf000000000000000000000000cbff7f3f0000003f560faa41801df23e00000000119e693fcbab5d41ed18fbbf393c7ebf92b7ef3d26e7cc3bf586f2bcf2a04bbed9c57abf000080bf0000000000000000000000006afe7f3f0000c03e560faa41801df23e00000000119e693fcbab5d41ed18fbbf7244063d977b803e97aa773fe46c7fbf31a6843dfa508b3c000080bf000000000000000000000000d5fb7f3f0000803e560faa41801df23e00000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.21522258, y: 6.927221, z: -0.69446886}
+    m_Extent: {x: 0.70262706, y: 6.927221, z: 1.2672293}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+--- !u!21 &828224732216000320
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Optimized Leaf Material
+  m_Shader: {fileID: 10605, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpSpecMap:
+        m_Texture: {fileID: 2800000, guid: e3a17ace427f873468edce9827aaeba9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 28246e5abe9d9b047a149e1a20b961a6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowTex:
+        m_Texture: {fileID: 2800000, guid: 1521d5e41cbd6c24398c33faa336d0db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TranslucencyMap:
+        m_Texture: {fileID: 2800000, guid: afcaac268814d8a41865314fd055f7a1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Cutoff: 0.38
+    - _ShadowOffsetScale: 1.54
+    - _ShadowStrength: 0.59
+    - _SquashAmount: 1
+    - _TranslucencyViewDependency: 0.7
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _TranslucencyColor: {r: 0.54504013, g: 0.6792453, b: 0.1943751, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &3010419303601280966
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Optimized Bark Material
+  m_Shader: {fileID: 10604, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpSpecMap:
+        m_Texture: {fileID: 2800000, guid: e3a17ace427f873468edce9827aaeba9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 28246e5abe9d9b047a149e1a20b961a6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TranslucencyMap:
+        m_Texture: {fileID: 2800000, guid: afcaac268814d8a41865314fd055f7a1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Cutoff: 0.3
+    - _SquashAmount: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &6437789228091715998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12106, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: Tree Data
+  m_EditorClassIdentifier: 
+  _uniqueID: 7
+  materialHash: 31d6cfe0d16ae931b73c59d7e0c089c0-583008256
+  root:
+    _uniqueID: 1
+    seed: 3489585
+    _internalSeed: 7711982
+    m_Hash: 
+    distributionFrequency: 1
+    distributionMode: 0
+    distributionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    distributionNodes: 5
+    distributionTwirl: 0
+    distributionPitch: 0
+    distributionPitchCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    distributionScale: 1
+    distributionScaleCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0.3
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    showAnimationProps: 1
+    animationPrimary: 0.5
+    animationSecondary: 0.5
+    animationEdge: 1
+    visible: 1
+    lockFlags: 0
+    nodeIDs: 02000000
+    parentGroupID: -1
+    childGroupIDs: 03000000
+    adaptiveLODQuality: 0.8
+    shadowTextureQuality: 3
+    enableWelding: 1
+    enableAmbientOcclusion: 1
+    enableMaterialOptimize: 1
+    aoDensity: 0.79
+    rootSpread: 4.3
+    groundOffset: 0
+    rootMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  branchGroups:
+  - _uniqueID: 3
+    seed: 1234
+    _internalSeed: 3491078
+    m_Hash: 
+    distributionFrequency: 1
+    distributionMode: 0
+    distributionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    distributionNodes: 5
+    distributionTwirl: 0
+    distributionPitch: 0
+    distributionPitchCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    distributionScale: 1
+    distributionScaleCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0.3
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    showAnimationProps: 1
+    animationPrimary: 0.5
+    animationSecondary: 0
+    animationEdge: 1
+    visible: 1
+    lockFlags: 0
+    nodeIDs: 04000000
+    parentGroupID: 1
+    childGroupIDs: 
+    lodQualityMultiplier: 1
+    geometryMode: 0
+    materialBranch: {fileID: 0}
+    materialBreak: {fileID: 0}
+    materialFrond: {fileID: 0}
+    height: {x: 10, y: 15}
+    radius: 0.5
+    radiusCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: -1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    radiusMode: 1
+    capSmoothing: 0
+    crinklyness: 0.1
+    crinkCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    seekBlend: 0
+    seekCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    noise: 0.1
+    noiseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    noiseScaleU: 0.2
+    noiseScaleV: 0.1
+    flareSize: 0
+    flareHeight: 0.1
+    flareNoise: 0.3
+    weldHeight: 0.1
+    weldSpreadTop: 0
+    weldSpreadBottom: 0
+    breakingChance: 0
+    breakingSpot: {x: 0.4, y: 0.6}
+    frondCount: 1
+    frondWidth: 1
+    frondCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    frondRange: {x: 0.1, y: 1}
+    frondRotation: 0
+    frondCrease: 0
+  leafGroups: []
+  nodes:
+  - spline:
+      nodes: []
+      tension: 0.5
+    seed: 11201567
+    animSeed: 0
+    visible: 1
+    triStart: 0
+    triEnd: 0
+    vertStart: 0
+    vertEnd: 0
+    capRange: 0
+    breakOffset: 1
+    size: 4.3
+    scale: 1
+    offset: 0
+    baseAngle: 0
+    angle: 0
+    pitch: -0
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    parentID: 0
+    groupID: 1
+    _uniqueID: 2
+  - spline:
+      nodes:
+      - point: {x: 0, y: 0, z: 0}
+        rot: {x: 0, y: 0, z: 0, w: 1}
+        normal: {x: 0, y: 0, z: 1}
+        tangent: {x: 0, y: 1, z: 0}
+        time: 0
+      - point: {x: -0.0550403, y: 0.99264026, z: 0.10787004}
+        rot: {x: 0.045016646, y: 0, z: -0.00034526698, w: 0.9989862}
+        normal: {x: 0, y: -0.08994206, z: 0.995947}
+        tangent: {x: 0.00073345733, y: 0.99594676, z: 0.08994204}
+        time: 0.07048985
+      - point: {x: 0.0014643855, y: 1.9884644, z: 0.1795744}
+        rot: {x: 0.009032379, y: 0, z: -0.0077367937, w: 0.99992937}
+        normal: {x: 0.000052762738, y: -0.01806359, z: 0.99983686}
+        tangent: {x: 0.0154733155, y: 0.9997171, z: 0.01806061}
+        time: 0.1409797
+      - point: {x: -0.024164481, y: 2.9874995, z: 0.1439086}
+        rot: {x: -0.05523814, y: 0.001514853, z: 0.008890207, w: 0.9984326}
+        normal: {x: 0.0020372553, y: 0.110330105, z: 0.9938929}
+        tangent: {x: -0.017918898, y: 0.9937394, z: -0.11027634}
+        time: 0.21146955
+      - point: {x: -0.03427209, y: 3.9703245, z: -0.04035476}
+        rot: {x: -0.086513236, y: 0.00032296768, z: -0.001539248, w: 0.9962495}
+        normal: {x: 0.0009105372, y: 0.17237647, z: 0.9850307}
+        tangent: {x: 0.003018171, y: 0.9850262, z: -0.17237847}
+        time: 0.2819594
+      - point: {x: -0.018129103, y: 4.957238, z: -0.20079339}
+        rot: {x: -0.055209123, y: -0.0011772035, z: -0.027743818, w: 0.9980886}
+        normal: {x: 0.00071949465, y: 0.1102724, z: 0.99390113}
+        tangent: {x: 0.055511903, y: 0.99236447, z: -0.11014209}
+        time: 0.35244924
+      - point: {x: 0.07652361, y: 5.9509754, z: -0.2601863}
+        rot: {x: -0.039238535, y: -0.0013090583, z: -0.01987723, w: 0.9990313}
+        normal: {x: -0.0010576425, y: 0.07845332, z: 0.99691725}
+        tangent: {x: 0.039818693, y: 0.99613047, z: -0.07834916}
+        time: 0.4229391
+      - point: {x: 0.061374042, y: 6.9461403, z: -0.3572275}
+        rot: {x: -0.059922103, y: -0.0009216106, z: -0.020278007, w: 0.9979966}
+        normal: {x: 0.0005923895, y: 0.11964159, z: 0.992817}
+        tangent: {x: 0.040584177, y: 0.9919963, z: -0.1195669}
+        time: 0.49342895
+      - point: {x: 0.1575449, y: 7.931373, z: -0.49888682}
+        rot: {x: -0.06597062, y: -0.002924597, z: -0.05242007, w: 0.9964394}
+        normal: {x: 0.001089234, y: 0.13177803, z: 0.99127865}
+        tangent: {x: 0.10485288, y: 0.9858, z: -0.13116492}
+        time: 0.5639188
+      - point: {x: 0.27106026, y: 8.917557, z: -0.61953294}
+        rot: {x: -0.08022128, y: -0.0041611474, z: -0.07713182, w: 0.9937796}
+        normal: {x: 0.0041055693, y: 0.16008654, z: 0.98709446}
+        tangent: {x: 0.15397163, y: 0.97523046, z: -0.15880285}
+        time: 0.63440865
+      - point: {x: 0.4649934, y: 9.8787, z: -0.8159822}
+        rot: {x: -0.11575684, y: -0.004995943, z: -0.10806091, w: 0.98736936}
+        normal: {x: 0.015146114, y: 0.22966969, z: 0.9731508}
+        tangent: {x: 0.21454932, y: 0.9498464, z: -0.22750895}
+        time: 0.7048985
+      - point: {x: 0.6998334, y: 10.815808, z: -1.0742056}
+        rot: {x: -0.13733286, y: -0.0009611827, z: -0.09611843, w: 0.98585}
+        normal: {x: 0.024508586, y: 0.27096358, z: 0.96227753}
+        tangent: {x: 0.18978027, y: 0.9438019, z: -0.2705947}
+        time: 0.77538836
+      - point: {x: 0.8441311, y: 11.764201, z: -1.3565686}
+        rot: {x: -0.16500592, y: 0.011550974, z: -0.037953857, w: 0.9854944}
+        normal: {x: 0.035291955, y: 0.32434803, z: 0.94527924}
+        tangent: {x: 0.070994906, y: 0.9426651, z: -0.32610166}
+        time: 0.8458782
+      - point: {x: 0.8413035, y: 12.694239, z: -1.724022}
+        rot: {x: -0.1438557, y: 0.013896728, z: -0.01654582, w: 0.9893628}
+        normal: {x: 0.032257907, y: 0.2841912, z: 0.95822483}
+        tangent: {x: 0.028742231, y: 0.95806354, z: -0.28511092}
+        time: 0.91636807
+      - point: {x: 0.91256815, y: 13.854442, z: -1.9616982}
+        rot: {x: -0.10035917, y: 0.01171875, z: -0.03138513, w: 0.9943871}
+        normal: {x: 0.029605918, y: 0.19885597, z: 0.9795814}
+        tangent: {x: 0.060065944, y: 0.977886, z: -0.20032717}
+        time: 1
+      tension: 0.5
+    seed: 6980663
+    animSeed: 0
+    visible: 1
+    triStart: 0
+    triEnd: 120
+    vertStart: 0
+    vertEnd: 77
+    capRange: 0
+    breakOffset: 1
+    size: 0.47288132
+    scale: 0.94576263
+    offset: 0
+    baseAngle: 0
+    angle: 0
+    pitch: -0
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: -0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    parentID: 2
+    groupID: 3
+    _uniqueID: 4
+  - spline:
+      nodes: []
+      tension: 0.5
+    seed: 10420627
+    animSeed: 0
+    visible: 1
+    triStart: 116
+    triEnd: 120
+    vertStart: 75
+    vertEnd: 83
+    capRange: 0
+    breakOffset: 1
+    size: 0
+    scale: 1
+    offset: 0
+    baseAngle: 0
+    angle: 0
+    pitch: -0
+    rotation: {x: 0.014805551, y: 0.25470966, z: -0.0039002285, w: 0.96689636}
+    matrix:
+      e00: 0.87021554
+      e01: 0.015084467
+      e02: 0.4924402
+      e03: 0.015084467
+      e10: 0.49267113
+      e11: -0.026643952
+      e12: -0.86980754
+      e13: -0.026643952
+      e20: -0.00000002936549
+      e21: 0.9995311
+      e22: -0.030617664
+      e23: 0.9995311
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    parentID: 2
+    groupID: 5
+    _uniqueID: 6
+  mesh: {fileID: -8340306771703363360}
+  optimizedSolidMaterial: {fileID: 3010419303601280966}
+  optimizedCutoutMaterial: {fileID: 828224732216000320}
+  isInPreviewMode: 0
