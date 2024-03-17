@@ -25,7 +25,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public float gravedad = -9.81f;
     public float alturaDelSalto;
 
-    
+
     [Header("Variables de Animación")]
     public Animator animator;
 
@@ -36,45 +36,44 @@ public class MovimientoPersonaje : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
         controlador = GetComponent<CharacterController>();
         canMove = true;
     }
 
     void Update()
     {
-        if (canMove) 
+        if (canMove)
         {
-        estaEnElSuelo = Physics.CheckSphere(chequeadorDeSuelo.position, distanciaAlSuelo, mascaraDeSuelo);
-        if (estaEnElSuelo && velocidad.y < 0)
-        {
-            velocidad.y = -2f;
-        }
+            estaEnElSuelo = Physics.CheckSphere(chequeadorDeSuelo.position, distanciaAlSuelo, mascaraDeSuelo);
+            if (estaEnElSuelo && velocidad.y < 0)
+            {
+                velocidad.y = -2f;
+            }
 
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direccion = new Vector3(horizontal, 0f, vertical).normalized;
-        animator.SetFloat(variableMovimiento, (Mathf.Abs(vertical) + Mathf.Abs(horizontal)));
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
+            Vector3 direccion = new Vector3(horizontal, 0f, vertical).normalized;
+            animator.SetFloat(variableMovimiento, (Mathf.Abs(vertical) + Mathf.Abs(horizontal)));
 
-        if (direccion.magnitude >= 0.1f)
-        {
-            float anguloARotar = Mathf.Atan2(direccion.x, direccion.z) * Mathf.Rad2Deg + camara.eulerAngles.y;
-            float angulo = Mathf.SmoothDampAngle(transform.eulerAngles.y, anguloARotar, ref velocidadRotacionSuave, rotacionSuave);
-            transform.rotation = Quaternion.Euler(0f, angulo, 0f);
+            if (direccion.magnitude >= 0.1f)
+            {
+                float anguloARotar = Mathf.Atan2(direccion.x, direccion.z) * Mathf.Rad2Deg + camara.eulerAngles.y;
+                float angulo = Mathf.SmoothDampAngle(transform.eulerAngles.y, anguloARotar, ref velocidadRotacionSuave, rotacionSuave);
+                transform.rotation = Quaternion.Euler(0f, angulo, 0f);
 
-            Vector3 direccionDelMovimiento = Quaternion.Euler(0f, anguloARotar, 0f) * Vector3.forward;
-            controlador.Move(direccionDelMovimiento.normalized * velocidadDeMovimiento * Time.deltaTime);
-        }
+                Vector3 direccionDelMovimiento = Quaternion.Euler(0f, anguloARotar, 0f) * Vector3.forward;
+                controlador.Move(direccionDelMovimiento.normalized * velocidadDeMovimiento * Time.deltaTime);
+            }
 
-        if (Input.GetButtonDown("Jump") && estaEnElSuelo)
-        {
-            velocidad.y = Mathf.Sqrt(alturaDelSalto * -2f * gravedad);
-        }
+            if (Input.GetKeyDown(KeyCode.Space) && estaEnElSuelo)
+            {
+                velocidad.y = Mathf.Sqrt(alturaDelSalto * -2f * gravedad);
+            }
 
-        velocidad.y += gravedad * Time.deltaTime;
-        controlador.Move(velocidad * Time.deltaTime);
+            velocidad.y += gravedad * Time.deltaTime;
+            controlador.Move(velocidad * Time.deltaTime);
 
-       animator.SetBool(variableSuelo, controlador.isGrounded);
+            animator.SetBool(variableSuelo, controlador.isGrounded);
         }
 
     }

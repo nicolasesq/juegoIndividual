@@ -39,7 +39,7 @@ public class SaludPersonaje : MonoBehaviour
         if (saludActual <= 0)
         {
             Debug.Log("El jugador ha perdido toda la salud. Reiniciando la escena...");
-            ReiniciarEscena();
+            SceneManager.LoadScene("Derrota");
         }
     }
 

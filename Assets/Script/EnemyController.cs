@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
@@ -6,15 +7,21 @@ public class EnemyController : MonoBehaviour
     public float velocidad = 3f;
     public int vidaMaxima = 5;
     private int vidaActual;
-    public static int enemigosRestantes;
     private Transform jugador;
     private Animator animador;
+
+    // Modificado para contar enemigos restantes
+    public static int enemigosRestantes;
+    public int enemigosParaGanar = 10; // Nuevo
 
     void Start()
     {
         jugador = GameObject.FindGameObjectWithTag("Player").transform;
         animador = GetComponent<Animator>();
         vidaActual = vidaMaxima;
+
+        // Incrementar el contador de enemigos restantes al iniciar
+        enemigosRestantes++;
     }
 
     void Update()
@@ -46,14 +53,20 @@ public class EnemyController : MonoBehaviour
         vidaActual -= cantidadDanio;
         if (vidaActual <= 0)
         {
-            contenemigos.DecrementarEnemigosRestantes();
             Morir();
         }
     }
 
     void Morir()
     {
-        
+        // Decrementar el contador de enemigos restantes cuando muere
+        enemigosRestantes--;
         Destroy(gameObject);
+
+        // Verificar si todos los enemigos han sido destruidos para cargar la escena de ganar
+        if (enemigosRestantes <= 0)
+        {
+            SceneManager.LoadScene("Ganaste");
+        }
     }
 }

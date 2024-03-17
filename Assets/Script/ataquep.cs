@@ -1,33 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ataquep : MonoBehaviour
+public class AtaqueP : MonoBehaviour
 {
-    public Animator JugadorAnim;
-    public MovimientoPersonaje jugadorScript;
-    public Transform Zonadedisparo;
-    public Transform BulletPrefab;
-    public float tiempoEntreDisparos = 0.5f;
+    public GameObject proyectilPrefab;
+    public Transform puntoDisparo;
+    public float fuerzaDisparo = 1000f;
+    public float cadenciaDisparo = 0.5f;
+
     private float tiempoUltimoDisparo;
+    private Animator animator; // Referencia al componente Animator
+
+    void Start()
+    {
+        animator = GetComponent<Animator>(); // Obtiene la referencia al componente Animator
+    }
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && jugadorScript.estaEnElSuelo && Time.time > tiempoUltimoDisparo + tiempoEntreDisparos)
+        if (Input.GetButtonDown("Fire1") && Time.time > tiempoUltimoDisparo + cadenciaDisparo)
         {
-            JugadorAnim.SetTrigger("Ataque");
+            Disparar();
             tiempoUltimoDisparo = Time.time;
         }
     }
 
-    public void Ataca()
+    void Disparar()
     {
-        jugadorScript.canMove = false;
-        Instantiate(BulletPrefab, Zonadedisparo.position, Zonadedisparo.rotation);
-    }
+        animator.SetTrigger("Ataque"); // Activa la condición de animación "Ataque"
 
-    public void DejaDeatar()
-    {
-        jugadorScript.canMove = true;
+        GameObject proyectil = Instantiate(proyectilPrefab, puntoDisparo.position, puntoDisparo.rotation);
+        Rigidbody rb = proyectil.GetComponent<Rigidbody>();
+
+        if (rb != null)
+        {
+            rb.AddForce(puntoDisparo.forward * fuerzaDisparo);
+        }
     }
 }
