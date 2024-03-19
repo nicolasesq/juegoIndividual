@@ -9,12 +9,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f611ebc4b474df04d873600254fdd842, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f611ebc4b474df04d873600254fdd842, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.019556046
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f611ebc4b474df04d873600254fdd842, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.66
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f611ebc4b474df04d873600254fdd842, type: 3}
       propertyPath: m_LocalPosition.z
@@ -127,7 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rangoDeteccion: 30
   velocidad: 15
-  vidaMaxima: 5
+  vidaMaxima: 2
+  enemigosParaGanar: 9
 --- !u!95 &948205952753229964
 Animator:
   serializedVersion: 5

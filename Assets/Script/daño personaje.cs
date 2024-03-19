@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; // Importa este namespace para usar Text
+using UnityEngine.UI; 
 
 public class SaludPersonaje : MonoBehaviour
 {
     public int saludMaxima = 5;
     public int saludActual;
 
-    public Text textoSalud; // Referencia al objeto de texto en el HUD
+    public Text textoSalud; 
 
     private void Start()
     {
         saludActual = saludMaxima;
-        ActualizarTextoSalud(); // Llama a esta función al inicio para inicializar el texto
+        ActualizarTextoSalud(); 
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,7 +35,7 @@ public class SaludPersonaje : MonoBehaviour
     public void PerderSalud(int cantidad)
     {
         saludActual -= cantidad;
-        ActualizarTextoSalud(); // Actualiza el texto cada vez que se pierde salud
+        ActualizarTextoSalud(); 
         if (saludActual <= 0)
         {
             Debug.Log("El jugador ha perdido toda la salud. Reiniciando la escena...");
@@ -48,7 +48,7 @@ public class SaludPersonaje : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    // Función para actualizar el texto de la salud en el HUD
+    
     private void ActualizarTextoSalud()
     {
         textoSalud.text = " " + saludActual.ToString();

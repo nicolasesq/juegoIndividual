@@ -8,11 +8,11 @@ public class AtaqueP : MonoBehaviour
     public float cadenciaDisparo = 0.5f;
 
     private float tiempoUltimoDisparo;
-    private Animator animator; // Referencia al componente Animator
+    private Animator animator;
 
     void Start()
     {
-        animator = GetComponent<Animator>(); // Obtiene la referencia al componente Animator
+        animator = GetComponent<Animator>(); 
     }
 
     void Update()
@@ -26,7 +26,7 @@ public class AtaqueP : MonoBehaviour
 
     void Disparar()
     {
-        animator.SetTrigger("Ataque"); // Activa la condición de animación "Ataque"
+        animator.SetTrigger("Ataque"); 
 
         GameObject proyectil = Instantiate(proyectilPrefab, puntoDisparo.position, puntoDisparo.rotation);
         Rigidbody rb = proyectil.GetComponent<Rigidbody>();

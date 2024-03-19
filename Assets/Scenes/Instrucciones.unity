@@ -393,7 +393,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Movimiento:                      Salto:                        Ataque:\n\n   
     (W)\n(A)(S)(D)                         (Space)             (ClicIzquierdo)\n\n\n\nPara
-    eliminar a los enemigos denes darle 5 disparos."
+    eliminar a los enemigos denes darle 2 disparos."
 --- !u!222 &428209435
 CanvasRenderer:
   m_ObjectHideFlags: 0

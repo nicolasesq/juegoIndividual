@@ -25,19 +25,19 @@ public class mainmenu : MonoBehaviour
     public void EscenaJuego()
     {
         SceneManager.LoadScene("juego");
-        BloquearCursor(); // Desbloquear el cursor al cargar la escena del juego
+        BloquearCursor(); 
     }
 
     public void EscenaInstrucciones()
     {
         SceneManager.LoadScene("Instrucciones");
-        DesbloquearCursor(); // Desbloquear el cursor al cargar la escena de instrucciones
+        DesbloquearCursor(); 
     }
 
     public void devolver()
     {
         SceneManager.LoadScene("hudInicial");
-        DesbloquearCursor(); // Desbloquear el cursor al cargar la escena del HUD inicial
+        DesbloquearCursor(); 
     }
 
     public void Salir()

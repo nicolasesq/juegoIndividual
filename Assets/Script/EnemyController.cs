@@ -10,9 +10,9 @@ public class EnemyController : MonoBehaviour
     private Transform jugador;
     private Animator animador;
 
-    // Modificado para contar enemigos restantes
+    
     public static int enemigosRestantes;
-    public int enemigosParaGanar = 10; // Nuevo
+    public int enemigosParaGanar = 10; 
 
     void Start()
     {
@@ -20,7 +20,7 @@ public class EnemyController : MonoBehaviour
         animador = GetComponent<Animator>();
         vidaActual = vidaMaxima;
 
-        // Incrementar el contador de enemigos restantes al iniciar
+        
         enemigosRestantes++;
     }
 
@@ -59,11 +59,11 @@ public class EnemyController : MonoBehaviour
 
     void Morir()
     {
-        // Decrementar el contador de enemigos restantes cuando muere
+        
         enemigosRestantes--;
         Destroy(gameObject);
 
-        // Verificar si todos los enemigos han sido destruidos para cargar la escena de ganar
+        
         if (enemigosRestantes <= 0)
         {
             SceneManager.LoadScene("Ganaste");
